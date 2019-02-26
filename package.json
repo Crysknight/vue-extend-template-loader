@@ -1,0 +1,29 @@
+{
+    "name": "vue-extend-template-loader",
+    "version": "0.0.1",
+    "description": "A loader for extending vue sfc templates alongside simple extension",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Crysknight/vue-extend-template-loader.git"
+    },
+    "keywords": [
+        "vue",
+        "loader",
+        "webpack",
+        "sfc"
+    ],
+    "author": "Paul Rukavishnikov",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Crysknight/vue-extend-template-loader/issues"
+    },
+    "homepage": "https://github.com/Crysknight/vue-extend-template-loader#readme",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.2"
+    }
+}
