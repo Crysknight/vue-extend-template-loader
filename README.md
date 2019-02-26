@@ -66,3 +66,10 @@ export default {
 };
 </script>
 ```
+
+## Supported operations (mode="append" for example)
+append, prepend - appends or prepends markup to the queried node
+delete, remove - deletes node
+replace - replaces queried node with specified markup
+after, before - inserts markup before or after queried node
+
