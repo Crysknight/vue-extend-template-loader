@@ -40,6 +40,12 @@ module.exports = {
 };
 ```
 
+## Supported operations (mode="operationName" in extender)
+- append, prepend - appends or prepends markup to the queried node
+- delete, remove - deletes node
+- replace - replaces queried node with specified markup
+- after, before - inserts markup before or after queried node
+
 ## Usage example:
 
 ### Base Component
@@ -94,6 +100,8 @@ export default {
 </template>
 
 <script>
+import Test1 from './test_1';
+
 export default {
     name: 'Test2',
     extends: Test1,
@@ -105,10 +113,3 @@ export default {
 };
 </script>
 ```
-
-## Supported operations (mode="append" for example)
-- append, prepend - appends or prepends markup to the queried node
-- delete, remove - deletes node
-- replace - replaces queried node with specified markup
-- after, before - inserts markup before or after queried node
-
