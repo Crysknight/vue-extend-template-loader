@@ -1,6 +1,17 @@
 # vue-extend-template-loader
 A loader for extending vue sfc templates alongside simple extension
 
+## How to connect
+
+```
+npm i -D vue-extend-template-loader
+```
+
+#### webpack.config.js
+```
+
+```
+
 ## Usage example:
 
 ### Base Component
