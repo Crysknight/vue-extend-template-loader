@@ -65,9 +65,12 @@ export default {
 ```
 
 ### Extender Component
+*Don't forget to specify `type="extend"` in your template tag since without it loader will NOT process your template, 
+and Vue will then completely replace the source template with it (breaking it ofc)*
 ```
 <template type="extend">
     <extenders>
+        <!-- Attribute query is similar to css selector -->
         <extender query=".test-1" mode="append">
             <div class="howdy">Howdy!</div>
         </extender>
