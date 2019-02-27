@@ -7,9 +7,37 @@ A loader for extending vue sfc templates alongside simple extension
 npm i -D vue-extend-template-loader
 ```
 
-#### webpack.config.js
+#### webpack.config.js - configureWebpack
+```
+module.exports = {
+    configureWebpack: {
+        module: {
+            rules: [
+                {
+                    test: /\.vue$/,
+                    enforce: 'pre',
+                    loader: 'vue-extend-template-loader'
+                }
+            ]
+        }
+    }
+};
 ```
 
+#### webpack.config.js - chainWebpack
+```
+module.exports = {
+    chainWebpack: config => {
+        config.module
+            .rule('extend-template')
+            .test(/\.vue$/)
+            .pre()
+            .use()
+            .loader('vue-extend-template-loader')
+            .end()
+            .end();
+    }
+};
 ```
 
 ## Usage example:
