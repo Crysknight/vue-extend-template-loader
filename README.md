@@ -40,7 +40,7 @@ module.exports = {
 };
 ```
 
-## Supported operations (mode="operationName" in extender)
+## Supported operations (`mode="operationName"` in extender)
 - append, prepend - appends or prepends markup to the queried node
 - delete, remove - deletes node
 - replace - replaces queried node with specified markup
